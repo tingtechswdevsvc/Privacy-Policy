@@ -42,6 +42,7 @@
 			document.getElementById(sItem).style.display = "block";
 			
 			if (sItem!="divGameDev") { hideMenu("divGameDev"); }
+			if (sItem!="div3DModels") { hideMenu("div3DModels"); }
 			if (sItem!="divTermsSvc") { hideMenu("divTermsSvc"); }
 			if (sItem!="divPrivacy") { hideMenu("divPrivacy"); }
 			if (sItem!="divContact") { hideMenu("divContact"); }
@@ -56,9 +57,10 @@
 <body style="background-color:#080830">
 <div style="width:100%;">
 <p class="p1">TINGtech Software Development Services</p>
-<table cellpadding="20">
+<table cellpadding="10">
 	<tr>
 		<td><button type="button" class="btn" onClick="showMenu('divGameDev');">Game development</button></td>
+		<td><button type="button" class="btn" onClick="showMenu('div3DModels');">3D models</button></td>
 		<td><button type="button" class="btn" onClick="showMenu('divTermsSvc');">Terms of Services</button></td>
 		<td><button type="button" class="btn" onClick="showMenu('divPrivacy');">Privacy Policy</button></td>
 		<td><button type="button" class="btn" onClick="showMenu('divContact');">Contact us</button></td>
@@ -81,6 +83,18 @@
 			<td valign="top"><p>Bots Rumble</br>v0.0.0</br>(development in-progress)</p></td>
 			<td valign="top"><p>Bots Rumble is a multiplayer battle royale kind of game.  Player can select different robot type. Other features will be added later.</p></td>
 		<tr>
+	</table>
+</div>
+
+<div id="div3DModels" style="display:none;">
+	<p>We sell high quality 3D models in <a href="https://www.turbosquid.com/Search/Artists/TINGtech3DModel">TurboSquid</a> website.</p>
+	<table>
+		<tr><td valign="top"><img src="f16sufa512x255.png"></img></td>
+			<td valign="top"><p>Falcon F16 Sufa aircraft</p></td>
+		</tr>
+		<tr><td valign="top"><img src="su33sukhoi512x255.png"></img></td>
+			<td valign="top"><p>Sukhoi SU33 aircraft</p></td>
+		</tr>
 	</table>
 </div>
 
